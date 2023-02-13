@@ -1,0 +1,25 @@
+    if (scanf("%d", &A) != 1) {
+        printf("Error reading input file");
+        exit(1);
+    }
+
+    if (scanf("%d", &B) != 1) {
+        printf("Error reading input file");
+        exit(1);
+    }
+    C = (int **)malloc(B * sizeof(int));
+    for (i = 0; i < B; i++) {
+
+        if (scanf("%d", &C0) != 1) {
+            printf("Error reading input file");
+            exit(1);  
+        }
+        C[i] = (int *)malloc((C0 + 1) * sizeof(int));
+        C[i][0] = C0;
+        for (j = 1; j <= C0; j++) {
+            if (scanf("%d", &C[i][j]) != 1) {
+            printf("Error reading input file");
+            exit(1); 
+            }
+        }
+    }
